@@ -9,7 +9,7 @@ const entireTable = document.querySelector('.entireTable')
 const btnDiv = document.querySelector('.btn')
 const outputDiv = document.querySelector('.output')
 const tableContentDiv = document.querySelector('.tableContent')
-
+const heading = document.querySelector('.heading')
 
 let tableFn
 let tableIterable
@@ -33,6 +33,7 @@ iterable.addEventListener("click", function (e) {
     e.preventDefault();
     btnDiv.style.visibility = 'visible'
     outputDiv.style.visibility = 'visible'
+    heading.innerText = `Table for ${multiplicandInput.value}`
     if(playbackDelayInput.value != 0){
         step.style.display="none"
     }

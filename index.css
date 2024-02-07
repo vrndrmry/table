@@ -146,5 +146,19 @@ label span {
     align-items: center;
     gap: 10px;
   }
-
+  .output .tableContent p {
+    font-size: 1.2rem;
+  }
+  .input button {
+    font-size: 1rem;
+  }
+  input[type="number"] {
+    font-size: 1rem;
+  }
+  .btn button {
+    font-size: 1rem;
+  }
+  .output .heading {
+    font-size: 1.2rem;
+  }
 }
