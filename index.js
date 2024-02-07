@@ -44,7 +44,9 @@ iterable.addEventListener("click", function (e) {
 
 step.addEventListener("click", async function (e) {
   e.preventDefault();
+
   let {value, done} =  await tableIterable.next()
+
   if(!done){
     let row = Row(value)
     tableContentDiv.innerHTML += row
@@ -53,7 +55,7 @@ step.addEventListener("click", async function (e) {
 
 entireTable.addEventListener("click", async function (e) {
     e.preventDefault();
-    tableContentDiv.innerHTML = ""
+    // tableContentDiv.innerHTML = ""
     // let getTable=[...tableFn()]
     // let Elems = getTable.map(e=>Row(e))
     // tableContentDiv.innerHTML=Elems.join("\n")
