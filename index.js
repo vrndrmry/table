@@ -55,7 +55,7 @@ step.addEventListener("click", async function (e) {
 
 entireTable.addEventListener("click", async function (e) {
     e.preventDefault();
-    // tableContentDiv.innerHTML = ""
+    tableContentDiv.innerHTML = ""
     // let getTable=[...tableFn()]
     // let Elems = getTable.map(e=>Row(e))
     // tableContentDiv.innerHTML=Elems.join("\n")
